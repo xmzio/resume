@@ -8,6 +8,8 @@ url: ""
 contact_methods:
   - { symbol_name: email,  url: "&#109;ailto&#58;&#120;avier&#64;&#120;mz&#46;io", title: "&#120;avier&#64;&#120;mz&#46;io", hint: "Send an email" }
   - { symbol_name: linkedin, url: "https://www.linkedin.com/in/xaviermuniz/", title: "linkedin.com/in/xaviermuniz", hint: "Visit LinkedIn profile" }
+  - { symbol_name: telephone,  url: "tel:+1-214-364-4838", title: "+1 214-364-4838", hint: "Call 214-364-4838" }
+  #  - { symbol_name: voicemail,  url: "tel:+1-123-456-7890", title: "+1 123-456-7890", caption: "Please leave a message, I'll respond within the next business day" }
   - { symbol_name: home, url: "https://maps.apple.com/?address=Seattle,%20WA,%20United%20States", title: "Seattle, WA", hint: "View Seattle on the map" }
 
 github_repository:
@@ -16,9 +18,9 @@ github_repository:
 
 collections_dir: content
 collections:
-  clients:
+  skillsSoft:
     output: false
-  skills:
+  skillsTechnical:
     output: false
   experience:
     output: false
