@@ -1,7 +1,9 @@
 <footer class="footer d-flex flex-wrap justify-content-between align-items-center border-top">
 
-  <p class="text-muted">
-    {{ site.footnote | escape }}
+  <p class="text-muted" class="p-0 m-1">
+    {{ site.footnote | escape }};
+    {%- assign date_format = '%B %-d, %Y' -%}
+    &nbsp;updated on {{ page.last_modified_at | date: date_format }}
   </p>
   <p class="text-muted">
     Page source:  
