@@ -7,8 +7,6 @@ hero: |
   
   Focus on corporate web and mobile applications, enterprise portals, systems integrations, identity providers and mission-critical cloud deployments for global organizations.
   
-  I can identify the root cause of a critical issue, clearly communicate it to business users in simple terms and quickly mitigate it; then I can develop a solution and present it to executive audiences.
-  
   I have worked as an IT Consultant for these organizations, among others:
     
   ![Stanford Graduate School of Business](assets/160/stanfordgsb.png#emblem-small "Stanford Graduate School of Business")
