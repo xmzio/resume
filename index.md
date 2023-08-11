@@ -19,7 +19,8 @@ hero: |
 skillsSoft_caption:
 skillsTechnical_caption:
 experience_caption:
-experiencePrevious_caption: "This section covers experience from 10 years ago and older."
+experiencePrevious_caption: "This section covers experience from 10 years before."
+experiencePrevious_caption_print: "Please visit the online version of this document to see experience older than 10 years:"
 education_caption:
 last_modified_at: 2023-08-11
 ---
