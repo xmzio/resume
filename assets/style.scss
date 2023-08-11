@@ -29,7 +29,7 @@ header {
   margin-bottom: 1em;
 }
 .header_aside {
-  margin: 2em 0 1em 1em;
+  margin: 0 0 1em 1em;
 }
 .header_aside ul {
   margin-bottom: 0;
@@ -116,11 +116,3 @@ img.emblem-small, img[src*="#emblem-small"] {
   border-style: solid;
 }
 
-@media print {
-  div {
-    page-break-inside: auto;
-  }
-  div, p, ul, li {
-    break-after: always;
-  }
-}
