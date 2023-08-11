@@ -4,8 +4,7 @@ layout: base
 <article class="post">
   
   <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
+    <div class="col-12">
     
       {{- content -}}
   
@@ -14,11 +13,10 @@ layout: base
   
   <div class="resume_section resume_clients">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-12">
 
         <h2>Clients</h2>
-        <p>{{- page.clients_caption | escape -}}</p>
+        {{- page.clients_caption | markdownify -}}
   
       </div>
     </div>
@@ -26,13 +24,25 @@ layout: base
     {%- include resume_section_logos.html items=site.clients -%}
   </div>
   
+  <div class="resume_section resume_skills">
+    <div class="row">
+      <div class="col-12">
+  
+        <h2>Skills</h2>
+        {{- page.skills_caption | markdownify -}}
+  
+      </div>
+    </div>
+  
+    {%- include resume_section_cards.html items=site.skills -%}
+  </div>
+
   <div class="resume_section resume_experience">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-12">
 
         <h2>Experience</h2>
-        <p>{{- page.experience_caption | escape -}}</p>
+        {{- page.experience_caption | markdownify -}}
 
       </div>
     </div>
@@ -42,31 +52,29 @@ layout: base
   
   <div class="resume_section resume_experiencePrevious">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-12">
         
-        <h3>Previous experience</h3>
-        <p>{{- page.experiencePrevious_caption | escape -}}</p>
+        <h2>Previous experience</h2>
+        {{- page.experiencePrevious_caption | markdownify -}}
 
         <button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#resume_section_experiencePrevious" aria-expanded="false" aria-controls="resume_section_experiencePrevious" id="resume_section_experiencePrevious_revealButton">
-          Reveal
+          Show
         </button>
 
       </div>
     </div>
 
     <div class="collapse" id="resume_section_experiencePrevious">
-      {%- include resume_section_items.html items=site.experiencePrevious headingOffset=1 -%}
+      {%- include resume_section_items.html items=site.experiencePrevious -%}
     </div>
   </div>
   
   <div class="resume_section resume_education">
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col-12">
 
         <h2>Education</h2>
-        <p>{{- page.education_caption | escape -}}</p>
+        {{- page.education_caption | markdownify -}}
   
       </div>
     </div>

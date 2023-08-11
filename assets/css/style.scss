@@ -3,7 +3,6 @@
 ---
 
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 $font-family-base: 'Tinos', serif;
 
 body {
@@ -11,64 +10,100 @@ body {
   --bs-body-font-family: var(--bs-font-serif);
   --bs-font-monospace: 'VT323', monospace;
 }
+
+a {
+  color: DimGray;
+  text-decoration: none;
+  border-bottom: 1px dotted dimgray;
+}
+a:hover {
+  border-bottom: 2px dotted dimgray;
+}
+a.no-decoration {
+  text-decoration: none;
+  border-bottom: none;
+}
+
+header {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.header_aside {
+  margin: 2em 0 1em 1em;
+}
+.header_aside ul {
+  margin-bottom: 0;
+}
+.contact_methods svg {
+  width: 1em;
+  height: 1em;
+  fill: darkslategray;
+  margin-right: .2em;
+  margin-bottom: .25em;
+  padding: 0;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 h3, h4 {
   padding-top: 10pt;
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .resume_section {
   padding: 15pt 0 15pt 0;
 }
+
+.resume_skills h3 {
+  font-size: .8em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.resume_skills .card p {
+  font-size: .75em;
+  margin: 0;
+}
+
 .resume_clients h2 {
   display: none;
 }
+
 .organization {
   display: block;
   font-size: 1.4em;
 }
-.period {
-  
-}
+
 img.emblem {
   margin-top: 10pt;
   max-height: 40px;
 }
 img.emblem-small {
   max-height: 40px;
+  // margin: 0 2em 1em 0;
 }
-ul.social {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ul.social svg {
-  width: 1em;
-  height: 1em;
-  fill: darkslategray;
-  margin: 4pt;
-  padding: 0;
 
-  display: inline-block;
-  vertical-align: -.5em;
-}
-footer {
-  margin: 25pt 0 25pt 0;
-}
-ul.footer {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-ul.footer li {
-  display: inline;
-}
-ul.footer li:before {
-  content: "\2022";
-  margin: 0 4pt 0 4pt;
-}
-ul.footer li:first-child:before {
-  content: "";
-}
 .col-emblem {
   max-width: 48px;
+}
+
+.item_period svg {
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+  margin-bottom: .25em;
+  padding: 0;
+  display: inline-block;
 }

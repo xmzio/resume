@@ -1,0 +1,10 @@
+
+<div class="row">
+  <div class="col-12 d-flex flex-row">
+
+    {% for item in include.items %}
+      {% include resume_item_card.html item=item %}
+    {% endfor %}
+
+  </div>
+</div>
