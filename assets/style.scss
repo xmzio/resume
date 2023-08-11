@@ -65,8 +65,8 @@ h3, h4 {
   padding: 15pt 0 15pt 0;
 }
 .resume_skillsSoft, .resume_skillsTechnical {
+  margin: 15pt 0 0 0;
   padding: 0;
-  margin: 0;
 }
 .resume_section .card h3 {
   font-size: .8em;
@@ -104,10 +104,16 @@ img.emblem-small, img[src*="#emblem-small"] {
   padding: 0;
   display: inline-block;
 }
-
+.listitems_as_badges ul {
+  margin: 0 0 .25rem 0;
+  padding: 0;
+}
 .listitems_as_badges_items {
   font-family: sans-serif;
   font-weight: normal;
+  border-color: rgba(0, 0, 0, 0.176);
+  border-width: 1px;
+  border-style: solid;
 }
 
 @media print {
