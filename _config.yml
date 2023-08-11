@@ -12,6 +12,10 @@ contact_methods:
   #  - { symbol_name: voicemail,  url: "tel:+1-123-456-7890", title: "+1 123-456-7890", caption: "Please leave a message, I'll respond within the next business day" }
   - { symbol_name: home, url: "https://maps.apple.com/?address=Seattle,%20WA,%20United%20States", title: "Seattle, WA", hint: "View Seattle on the map" }
 
+website:
+  title: xmzio.github.io/resume
+  url: https://xmzio.github.io/resume
+    
 github_repository:
   title: github.com/xmzio/resume
   url: https://github.com/xmzio/resume
