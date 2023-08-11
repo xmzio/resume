@@ -11,30 +11,30 @@ layout: base
     </div>
   </div>
   
-  <div class="resume_section resume_clients">
-    <div class="row">
-      <div class="col-12">
-
-        <h2>Clients</h2>
-        {{- page.clients_caption | markdownify -}}
-  
-      </div>
-    </div>
-  
-    {%- include resume_section_logos.html items=site.clients -%}
-  </div>
-  
-  <div class="resume_section resume_skills">
+  <div class="resume_section resume_skillsSoft listitems_as_badges">
     <div class="row">
       <div class="col-12">
   
         <h2>Skills</h2>
-        {{- page.skills_caption | markdownify -}}
+        {{- page.skillsSoft_caption | markdownify -}}
+  
+      </div>
+    </div>
+
+    {%- include resume_section_cards_and_lists.html items=site.skillsSoft -%}
+  </div>
+
+  <div class="resume_section resume_skillsTechnical listitems_as_badges">
+    <div class="row">
+      <div class="col-12">
+  
+        <h2>Technical</h2>
+        {{- page.skillsTechnical_caption | markdownify -}}
   
       </div>
     </div>
   
-    {%- include resume_section_cards.html items=site.skills -%}
+    {%- include resume_section_cards_and_lists.html items=site.skillsTechnical -%}
   </div>
 
   <div class="resume_section resume_experience">
