@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 $font-family-base: 'Tinos', serif;
 
-
 body {
   --bs-font-serif: 'Tinos', serif;
   --bs-body-font-family: var(--bs-font-serif);
@@ -29,7 +28,6 @@ header {
   margin-top: 2em;
   margin-bottom: 1em;
 }
-
 .header_aside {
   margin: 2em 0 1em 1em;
 }
@@ -66,20 +64,19 @@ h3, h4 {
 .resume_section {
   padding: 15pt 0 15pt 0;
 }
-
-.resume_skills h3 {
+.resume_skillsSoft, .resume_skillsTechnical {
+  padding: 0;
+  margin: 0;
+}
+.resume_section .card h3 {
   font-size: .8em;
   font-weight: bold;
   margin: 0;
   padding: 0;
 }
-.resume_skills .card p {
+.resume_section .card p {
   font-size: .75em;
   margin: 0;
-}
-
-.resume_clients h2 {
-  display: none;
 }
 
 .organization {
@@ -87,17 +84,16 @@ h3, h4 {
   font-size: 1.4em;
 }
 
+.col-emblem {
+  max-width: 48px;
+}
 img.emblem {
   margin-top: 10pt;
   max-height: 40px;
 }
-img.emblem-small {
+img.emblem-small, img[src*="#emblem-small"] {
   max-height: 40px;
-  // margin: 0 2em 1em 0;
-}
-
-.col-emblem {
-  max-width: 48px;
+  margin: 0 1em .25em 0;
 }
 
 .item_period svg {
@@ -107,4 +103,18 @@ img.emblem-small {
   margin-bottom: .25em;
   padding: 0;
   display: inline-block;
+}
+
+.listitems_as_badges_items {
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+@media print {
+  div {
+    page-break-inside: auto;
+  }
+  div, p, ul, li {
+    break-after: always;
+  }
 }
