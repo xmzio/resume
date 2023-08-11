@@ -1,2 +1,2 @@
-# resume-stg
-Xavier Muñiz's resume - Staging site
+# resume
+Xavier Muñiz's resume

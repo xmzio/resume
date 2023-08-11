@@ -14,7 +14,9 @@ contact_methods:
 
 github_repository:
   title: github.com/xmzio/resume
-  url: https://github.com/xmzio/resume-stg
+  url: https://github.com/xmzio/resume
+
+google_analytics: G-C7JJW8DSQL
 
 collections_dir: content
 collections:
@@ -28,5 +30,3 @@ collections:
     output: false
   education:
     output: false
-
-google_analytics: G-C7JJW8DSQL
