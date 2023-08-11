@@ -9,16 +9,15 @@
     <div class="container">
 
       <div class="row">
-        <div class="col-8">
+        <div class="col-12">
           {% include header.html %}
+          
+          {%- include header_aside.html -%}
           
           <div class="lead">
             {{ page.hero | markdownify }}
           </div>
           
-        </div>
-        <div class="col-md-4">
-          {%- include header_aside.html -%}
         </div>
       </div>
 
