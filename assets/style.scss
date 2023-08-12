@@ -92,9 +92,13 @@ img.emblem {
   margin-top: 10pt;
   max-height: 40px;
 }
-img.emblem-small, img[src*="#emblem-small"] {
-  max-height: 40px;
-  margin: 15px 30px 15px 0;
+img.emblem-medium, img[src*="#medium-emblem"] {
+  max-width: 30px;
+  margin: 4px 12px 4px 4px;
+}
+img.emblem-small, img[src*="#small-emblem"] {
+  max-height: 20px;
+  margin: 12px 20px 12px 0;
 }
 
 .item_period svg {
@@ -112,8 +116,5 @@ img.emblem-small, img[src*="#emblem-small"] {
 .listitems_as_badges_items {
   font-family: sans-serif;
   font-weight: normal;
-  border-color: rgba(0, 0, 0, 0.176);
-  border-width: 1px;
-  border-style: solid;
 }
 
