@@ -18,13 +18,16 @@
       footer {
       }
       .page-break {
-        page-break-after: always;
+        page-break-before: always;
       }
       .hide_print {
         display: none;
       }
     }
     @media not print {
+      .page-break {
+        display: none;
+      }
       .hide_display {
         display: none;
       }
