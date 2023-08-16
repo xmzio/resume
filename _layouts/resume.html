@@ -74,6 +74,19 @@ layout: base
     </div>
   </div>
   
+  <div class="resume_section resume_certifications">
+    <div class="row">
+      <div class="col-12">
+  
+        <h2>Certifications</h2>
+        {{- page.certifications_caption | markdownify -}}
+  
+      </div>
+    </div>
+  
+    {%- include resume_section_items.html items=site.certifications -%}
+  </div>
+
   <div class="resume_section resume_education">
     <div class="row">
       <div class="col-12">

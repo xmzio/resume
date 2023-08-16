@@ -34,3 +34,5 @@ collections:
     output: false
   education:
     output: false
+  certifications:
+    output: false
