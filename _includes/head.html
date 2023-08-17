@@ -38,5 +38,19 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
   
+  
+  
   <title>{{ site.title }}</title>
+  <meta name="title" content="{{ site.title }}" />
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.website.url }}" />
+  <meta property="og:title" content="{{ site.opengraph.title }}" />
+  <meta property="og:description" content="{{ site.opengraph.description }}" />
+  <meta property="og:image" content="{{ site.opengraph.image_url }}" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:url" content="{{ site.website.url }}" />
+  <meta property="twitter:title" content="{{ site.opengraph.title }}" />
+  <meta property="twitter:description" content="{{ site.opengraph.description }}" />
+  <meta property="twitter:image" content="{{ site.opengraph.image_url }}" />
 </head>

@@ -1,6 +1,12 @@
 title: Xavier Mu&ntilde;iz&rsquo;s resume
+description: Solutions Architect, Digital Experience Platforms Specialist and IT Consultant
 footnote: © 2023 Xavier Muñiz
 #footnote: "&#169; 2023 Xavier Mu&ntilde;iz"
+
+opengraph:
+  title: Xavier Mu&ntilde;iz&rsquo;s resume
+  description: Solutions Architect, Digital Experience Platforms Specialist and IT Consultant
+  image_url: https://xmzio.github.io/resume/assets/160/profilepicture.png
   
 baseurl: 
 url: ""
