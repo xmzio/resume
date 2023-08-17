@@ -5,7 +5,7 @@ subtitle:
 hero: |
   Solutions Architect, Digital Experience Platforms Specialist and IT Consultant.
   
-  Focus on corporate web and mobile applications, enterprise portals, systems integrations, identity providers and mission-critical cloud deployments for global organizations.  
+  Focus on enterprise web and mobile applications, web portals, systems integrations, identity providers and mission-critical cloud deployments for global organizations.  
 skillsSoft_caption:
 skillsTechnical_caption:
 experience_caption:
