@@ -21,7 +21,11 @@ layout: base
       </div>
     </div>
 
-    {%- include resume_section_cards_and_lists.html items=site.skillsSoft -%}
+    {% assign keySkillsSoft = site.skillsSoft | where: "key", page.key %}
+    {% assign noKeySkillsSoft = site.skillsSoft | where: "key", nil %}
+    {% assign skillsSoft = keySkillsSoft | concat: noKeySkillsSoft %}
+
+    {%- include resume_section_cards_and_lists.html items=skillsSoft -%}
   </div>
 
   <div class="resume_section resume_skillsTechnical listitems_as_badges">
@@ -34,7 +38,11 @@ layout: base
       </div>
     </div>
   
-    {%- include resume_section_cards_and_lists.html items=site.skillsTechnical -%}
+    {% assign keySkillsTechnical = site.skillsTechnical | where: "key", page.key %}
+    {% assign noKeySkillsTechnical = site.skillsTechnical | where: "key", nil %}
+    {% assign skillsTechnical = keySkillsTechnical | concat: noKeySkillsTechnical %}
+
+    {%- include resume_section_cards_and_lists.html items=skillsTechnical -%}
   </div>
 
   <div class="resume_section resume_experience">
@@ -47,7 +55,11 @@ layout: base
       </div>
     </div>
   
-    {%- include resume_section_items.html items=site.experience -%}
+    {% assign keyExperience = site.experience | where: "key", page.key %}
+    {% assign noKeyExperience = site.experience | where: "key", nil %}
+    {% assign experience = keyExperience | concat: noKeyExperience %}
+
+    {%- include resume_section_items.html items=experience -%}
   </div>
   
   <div class="resume_section resume_experiencePrevious">
@@ -70,7 +82,11 @@ layout: base
     </div>
 
     <div class="collapse" id="resume_section_experiencePrevious">
-      {%- include resume_section_items.html items=site.experiencePrevious -%}
+      {% assign keyExperiencePrevious = site.experiencePrevious | where: "key", page.key %}
+      {% assign noKeyExperiencePrevious = site.experiencePrevious | where: "key", nil %}
+      {% assign experiencePrevious = keyExperiencePrevious | concat: noKeyExperiencePrevious %}
+
+      {%- include resume_section_items.html items=experiencePrevious -%}
     </div>
   </div>
   
@@ -83,8 +99,12 @@ layout: base
   
       </div>
     </div>
+    
+    {% assign keyCertifications = site.certifications | where: "key", page.key %}
+    {% assign noKeyCertifications = site.certifications | where: "key", nil %}
+    {% assign certifications = keyCertifications | concat: noKeyCertifications %}
   
-    {%- include resume_section_items.html items=site.certifications -%}
+    {%- include resume_section_items.html items=certifications -%}
   </div>
 
   <div class="resume_section resume_education">
@@ -96,8 +116,12 @@ layout: base
   
       </div>
     </div>
+    
+    {% assign keyEducation = site.education | where: "key", page.key %}
+    {% assign noKeyEducation = site.education | where: "key", nil %}
+    {% assign education = keyEducation | concat: noKeyEducation %}
 
-    {%- include resume_section_items.html items=site.education -%}
+    {%- include resume_section_items.html items=education -%}
   </div>
 
 </article>
