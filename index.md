@@ -1,4 +1,5 @@
 ---
+key: comprehensive
 layout: resume
 title: Xavier Muñiz
 subtitle: 
