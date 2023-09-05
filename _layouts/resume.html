@@ -22,7 +22,7 @@ layout: base
     </div>
 
     {% assign keySkillsSoft = site.skillsSoft | where: "key", page.key %}
-    {% assign noKeySkillsSoft = site.skillsSoft | where: "key", nil %}
+    {% assign noKeySkillsSoft = site.skillsSoft | where: "key", null %}
     {% assign skillsSoft = keySkillsSoft | concat: noKeySkillsSoft %}
 
     {%- include resume_section_cards_and_lists.html items=skillsSoft -%}
@@ -39,7 +39,7 @@ layout: base
     </div>
   
     {% assign keySkillsTechnical = site.skillsTechnical | where: "key", page.key %}
-    {% assign noKeySkillsTechnical = site.skillsTechnical | where: "key", nil %}
+    {% assign noKeySkillsTechnical = site.skillsTechnical | where: "key", null %}
     {% assign skillsTechnical = keySkillsTechnical | concat: noKeySkillsTechnical %}
 
     {%- include resume_section_cards_and_lists.html items=skillsTechnical -%}
@@ -56,7 +56,7 @@ layout: base
     </div>
   
     {% assign keyExperience = site.experience | where: "key", page.key %}
-    {% assign noKeyExperience = site.experience | where: "key", nil %}
+    {% assign noKeyExperience = site.experience | where: "key", null %}
     {% assign experience = keyExperience | concat: noKeyExperience %}
 
     {%- include resume_section_items.html items=experience -%}
@@ -83,7 +83,7 @@ layout: base
 
     <div class="collapse" id="resume_section_experiencePrevious">
       {% assign keyExperiencePrevious = site.experiencePrevious | where: "key", page.key %}
-      {% assign noKeyExperiencePrevious = site.experiencePrevious | where: "key", nil %}
+      {% assign noKeyExperiencePrevious = site.experiencePrevious | where: "key", null %}
       {% assign experiencePrevious = keyExperiencePrevious | concat: noKeyExperiencePrevious %}
 
       {%- include resume_section_items.html items=experiencePrevious -%}
@@ -101,7 +101,7 @@ layout: base
     </div>
     
     {% assign keyCertifications = site.certifications | where: "key", page.key %}
-    {% assign noKeyCertifications = site.certifications | where: "key", nil %}
+    {% assign noKeyCertifications = site.certifications | where: "key", null %}
     {% assign certifications = keyCertifications | concat: noKeyCertifications %}
   
     {%- include resume_section_items.html items=certifications -%}
@@ -118,7 +118,7 @@ layout: base
     </div>
     
     {% assign keyEducation = site.education | where: "key", page.key %}
-    {% assign noKeyEducation = site.education | where: "key", nil %}
+    {% assign noKeyEducation = site.education | where: "key", null %}
     {% assign education = keyEducation | concat: noKeyEducation %}
 
     {%- include resume_section_items.html items=education -%}
